@@ -11,6 +11,10 @@ html{
     overflow-x: hidden;
 }
 
+body{
+    min-width: 100vw;
+}
+
 li{
     list-style: none;
 }
