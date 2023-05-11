@@ -5,7 +5,7 @@ body, nav, nav *, #header *, #header *::after, #header *::before, #timeline *{
 }
 
 html{
-    background-image: url("/HTML/CBL BC Landing page/img/Background.png");
+    background-image: url("/HTML/img/Background.png");
     background-repeat: repeat-y;
     background-size: 100vw;
     overflow-x: hidden;
@@ -56,8 +56,8 @@ iframe{
 
 @font-face {
     font-family: 'Maverick Italic';
-    src: url('/HTML/CBL BC Landing page/fonts/webfontkit-20230507-090214/maverick_italic-webfont.woff2') format('woff2'),
-         url('/HTML/CBL BC Landing page/fonts/webfontkit-20230507-090214maverick_italic-webfont.woff') format('woff');
+    src: url('/HTML/fonts/webfontkit-20230507-090214/maverick_italic-webfont.woff2') format('woff2'),
+         url('/HTML/fonts/webfontkit-20230507-090214maverick_italic-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 
@@ -65,8 +65,8 @@ iframe{
 
 @font-face {
     font-family: 'Maverick Regular';
-    src: url('/HTML/CBL BC Landing page/fonts/webfontkit-20230507-090214maverick_regular-webfont.woff2') format('woff2'),
-         url('/HTML/CBL BC Landing page/fonts/webfontkit-20230507-090214maverick_regular-webfont.woff') format('woff');
+    src: url('/HTML/fonts/webfontkit-20230507-090214maverick_regular-webfont.woff2') format('woff2'),
+         url('/HTML/fonts/webfontkit-20230507-090214maverick_regular-webfont.woff') format('woff');
     font-weight: normal;
     font-style: normal;
 }
