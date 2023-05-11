@@ -1,0 +1,73 @@
+body, nav, nav *, #header *, #header *::after, #header *::before, #timeline *{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+html{
+    background-image: url("/HTML/CBL BC Landing page/img/Background.png");
+    background-repeat: repeat-y;
+    background-size: 100vw;
+    overflow-x: hidden;
+}
+
+li{
+    list-style: none;
+}
+
+a{
+    text-decoration: none;
+    color: #fff;
+}
+
+a:hover{
+    color: #4ac6ff;
+}
+
+header{
+    position: relative;
+}
+
+iframe{
+    width: 100vw;
+    height: 100vh;
+}
+
+/* width */
+::-webkit-scrollbar {
+    width: 10px;
+  }
+  
+  /* Track */
+  ::-webkit-scrollbar-track {
+    background-color: rgba(0, 0, 0, 1);
+  }
+   
+  /* Handle */
+  ::-webkit-scrollbar-thumb {
+    background: #4ac6ff; 
+    border-radius: 10px;
+  }
+  
+  /* Handle on hover */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #4ac6ff; 
+  }
+
+@font-face {
+    font-family: 'Maverick Italic';
+    src: url('/HTML/CBL BC Landing page/fonts/webfontkit-20230507-090214/maverick_italic-webfont.woff2') format('woff2'),
+         url('/HTML/CBL BC Landing page/fonts/webfontkit-20230507-090214maverick_italic-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'Maverick Regular';
+    src: url('/HTML/CBL BC Landing page/fonts/webfontkit-20230507-090214maverick_regular-webfont.woff2') format('woff2'),
+         url('/HTML/CBL BC Landing page/fonts/webfontkit-20230507-090214maverick_regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
