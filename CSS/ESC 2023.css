@@ -1,14 +1,17 @@
 #header{
     display: flex;
-    height: 90vh;
+    background-image: url("/HTML/img/ESC 2023 header.png");
+    background-size: cover;
+    min-height: 90vh;
+    position: relative;
     background-color: transparent;
     justify-content: center;
     align-items: center;
 }
 
 #header img{
-    height: 100%;
-    width: 100%;
+    height: auto;
+    width: 60%;
 }
 
 #team{
@@ -131,14 +134,18 @@
     font-size: 24px;
 }
 
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 810px) {
     #header{
-        height: 30vh;
+        min-height: 70vh;
+    }
+    
+    #header img{
+        min-width: 90%;
     }
 }
 
-@media screen and (max-width: 810px) {
+@media screen and (max-width: 576px) {
     #header{
-        height: 70vh;
+        min-height: 50vh;
     }
 }
