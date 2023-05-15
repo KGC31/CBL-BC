@@ -18,7 +18,7 @@
 
    background-color: #000;
 
-   border: #4ac6ff 1px solid;
+   border: #4ac6ff 4px solid;
    border-top-left-radius: 1rem;
    border-top-right-radius: 1rem;
 }
@@ -31,7 +31,7 @@
 #recap iframe{
    width: var(--frame-width); 
    height: calc(var(--frame-width) * 315/560);
-   border: #4ac6ff 1px solid;
+   border: #4ac6ff 4px solid;
    border-bottom-left-radius: 1rem;
    border-bottom-right-radius: 1rem;
 }
