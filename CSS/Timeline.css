@@ -3,8 +3,8 @@
 	height: auto;
 	display: grid;
 	place-items: center;
-	padding: 50px 0;
-	margin-top: 2rem; 
+	padding: 50px 0 0;
+	margin: 30px 0 30px; 
 }
 /* Container Css Start  */
 
