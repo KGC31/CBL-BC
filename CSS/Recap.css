@@ -19,6 +19,7 @@
    background-color: #000;
 
    border: #4ac6ff 4px solid;
+   border-bottom: 0px;
    border-top-left-radius: 1rem;
    border-top-right-radius: 1rem;
 }
