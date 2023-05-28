@@ -77,6 +77,12 @@
     transition: transform .5s;
 }
 
+@media screen and (max-width: 1200px) {
+    #benefits .benefits-container{
+        margin-top: 2rem;
+    }
+}
+
 @media only screen and (max-width: 550px) {
     #benefits{
         background-image: none;
@@ -84,5 +90,7 @@
     #benefits .benefits-container{
         width: 60vw;
         margin-top: 2rem;
+        box-shadow: none;
+        border: #4ac6ff solid 1px;
     }
 }
