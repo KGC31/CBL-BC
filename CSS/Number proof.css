@@ -14,7 +14,7 @@
 #number-proof h3{
     font-family: 'Maverick Italic';
     color: #4ac6ff;
-    font-size: 10em;
+    font-size: 10rem;
     text-align: center;
     margin: 0;
     grid-area: 1;
@@ -25,4 +25,14 @@
     color: #fff;
     text-align: center;
     grid-area: 2;
+}
+
+@media only screen and (max-width: 550px) {
+    #number-proof h3{
+        font-size: 5rem;
+    }
+
+    #number-proof p{
+        font-size: 0.8rem;
+    }
 }

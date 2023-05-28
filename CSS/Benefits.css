@@ -76,3 +76,13 @@
     transform-origin: bottom;
     transition: transform .5s;
 }
+
+@media only screen and (max-width: 550px) {
+    #benefits{
+        background-image: none;
+    }
+    #benefits .benefits-container{
+        width: 60vw;
+        margin-top: 2rem;
+    }
+}
