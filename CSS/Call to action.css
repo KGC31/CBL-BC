@@ -1,0 +1,48 @@
+#call-to-action{
+    width: 100vw;
+    height: auto;
+}
+
+.act-child{
+    display: flex;
+    justify-items: flex-start;
+    align-items: center;
+    width: 100%;
+    height: 50vh;
+    background-position: center center;
+    background-size: cover;
+	background-repeat: no-repeat;
+    background-o
+}
+
+.act-child h3{
+    font-family: 'Maverick Italic';
+    font-size: 5rem;
+    color: #4ac6ff;
+    margin: 0;
+}
+
+.act-child a{
+    text-decoration: underline;
+    font-size: 1.25rem;
+}
+
+.act-child:nth-child(odd){
+    text-align: right;
+    justify-content: flex-end;
+}
+
+.act-child:nth-child(odd) div{
+    margin-right: 100px;
+}
+
+.act-child:nth-child(even) div{
+    margin-left: 100px;
+}
+
+
+@media screen and (max-width: 576px){
+    .act-child{
+        height: 20vh;
+    }
+}

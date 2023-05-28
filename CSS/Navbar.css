@@ -10,6 +10,7 @@ nav{
     backdrop-filter: blur(8px);
     
     position: fixed;
+    top: 0%;
 }
 
 ul{

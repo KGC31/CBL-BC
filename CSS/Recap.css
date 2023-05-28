@@ -18,7 +18,7 @@
 
    background-color: #000;
 
-   border: #4ac6ff 4px solid;
+   border: #4ac6ff 2px solid;
    border-bottom: 0px;
    border-top-left-radius: 1rem;
    border-top-right-radius: 1rem;
@@ -26,13 +26,13 @@
 
 #small-screen > img{
    margin-left: 1rem;
-   height: 1rem;
+   height: 10px;
 }
 
 #recap iframe{
    width: var(--frame-width); 
    height: calc(var(--frame-width) * 315/560);
-   border: #4ac6ff 4px solid;
+   border: #4ac6ff 2px solid;
    border-bottom-left-radius: 1rem;
    border-bottom-right-radius: 1rem;
 }
