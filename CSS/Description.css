@@ -1,8 +1,12 @@
 #description{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
     background-color: #000;
     height: 150%;
     text-align: center;
-    padding: 100px 35vh 0 35vh;
+    padding: 100px 35vh;
 }
 
 #description *{
@@ -24,7 +28,7 @@
 
 @media screen and (max-width: 1130px) {
     #description{
-        padding: 100px 10vh 0 10vh;
+        padding: 0 10vh;
     }
 
     #description h1{
@@ -34,7 +38,7 @@
 
 @media screen and (max-width: 678px) {
     #description{
-        padding: 100px 5vh 0 5vh;
+        padding: 0 5vh;
         height: 50vh;
     }
 }
