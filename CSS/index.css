@@ -9,6 +9,7 @@ body, nav, nav *, #header *, #header *::after, #header *::before, #timeline *{
 
 html{
     background-image: url("/HTML/img/Background.png");
+    /* background-color: #000; */
     background-repeat: repeat-y;
     background-size: 100vw;
     overflow-x: hidden;
