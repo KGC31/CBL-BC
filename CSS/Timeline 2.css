@@ -16,6 +16,8 @@
     box-sizing: border-box;
     font-family: 'Maverick Regular';
     color: #4ac6ff;
+    -webkit-text-stroke-width: 0.5px;
+    -webkit-text-stroke-color: black;
 }
 
 .timeline .content-desc{
