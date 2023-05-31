@@ -11,7 +11,7 @@
 }
 
 #logo-story img{
-    height: 60%;
+    width: 20%;
 }
 
 #logo-story div{
@@ -35,7 +35,7 @@
     font-weight: 800;
     font-style: italic;
 }
-@media screen and (max-width: 576px) {
+@media screen and (max-width: 678px) {
     #logo-story{
         flex-direction: column-reverse;
         height: max-content;

@@ -86,9 +86,12 @@
     }
 }
 
-@media only screen and (max-width: 550px) {
+@media only screen and (max-width: 678px) {
     #benefits{
         background-image: none;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
     }
     #benefits .benefits-container{
         width: 60vw;

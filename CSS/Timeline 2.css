@@ -115,11 +115,12 @@
     }
 
     .timeline-item::before{
-        left: 10px !important;
+        /* left: 10px !important;
         padding: 0 !important;
         border: none !important;
         text-align: center !important;
-        top: 50px;
+        top: 50px; */
+        content: "";
     }
 
     .timeline-item:last-child{

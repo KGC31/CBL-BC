@@ -121,4 +121,8 @@ nav .toggle_btn{
         left: 2rem;
         width: unset;
     }
+
+    nav #Logo p{
+        display: none;
+    }
 }

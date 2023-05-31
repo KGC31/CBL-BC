@@ -1,6 +1,6 @@
 #description{
     background-color: #000;
-    height: 40vh;
+    height: 150%;
     text-align: center;
     padding: 100px 35vh 0 35vh;
 }
@@ -20,4 +20,30 @@
     color: #4ac6ff;
     font-size: 5rem;
     padding: 0;
+}
+
+@media screen and (max-width: 1130px) {
+    #description{
+        padding: 100px 10vh 0 10vh;
+    }
+
+    #description h1{
+        font-size: 3rem;
+    }
+}
+
+@media screen and (max-width: 678px) {
+    #description{
+        padding: 100px 5vh 0 5vh;
+        height: 50vh;
+    }
+}
+
+@media screen and (max-width: 576px) {
+    #description h1{
+        font-size: 2rem;
+    }
+    #description h3, p{
+        font-size: 0.7rem;
+    }
 }
