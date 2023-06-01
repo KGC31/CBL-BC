@@ -25,6 +25,7 @@
     <link rel="stylesheet" href="/CSS/Footer.css">
 </head>
 <body>
+    <!-- Page pre-loader -->
     <section class="socket">
         <div class="gel center-gel">
             <div class="hex-brick h1"></div>
@@ -218,6 +219,7 @@
         </div>
     </section>
 
+    <!-- Navigation bar -->
     <header>
         <nav>
             <a href="index.html" id="Logo">
@@ -245,12 +247,14 @@
         </div>
     </header>
 
+    <!-- About us -->
     <section id="description">
         <h3>ABOUT US</h3>
         <h1>WE ARE THE GIFTED</h1>
         <p>CLB Bóng rổ THPT Chuyên Bảo Lộc được thành lập vào năm 2012 cùng với sự thành lập của trường THPT Chuyên Bảo Lộc. Là một trong những câu lạc bộ thể thao hoạt động sôi nổi nhất trường, CLB Bóng rổ luôn tự hào với những thành tích đã đạt được trong quãng thời gian hoạt động. Từ đó, CLB luôn hướng đến những mục tiêu lớn hơn trong tương lai</p>
     </section>
 
+    <!-- Benefits -->
     <section id="benefits">
         <div class="benefits-container">
             <h2>01</h2>
@@ -269,6 +273,7 @@
         </div>
     </section>
 
+    <!-- Some images -->
     <section id="grid-gallery">
         <div class="grid-item">
             <a href="/HTML/img/Grid image 1.jpg" data-lightbox="gridImage">
@@ -302,6 +307,7 @@
         </div>
     </section>
 
+    <!-- Our logo story -->
     <section id="logo-story">
         <img src="/HTML/img/CBL Logo.png" alt="CBL Basketball Logo">
         <div id="text-content">
@@ -350,6 +356,7 @@
             </ul>
     </section> -->
 
+    <!-- Timeline -->
     <section id="timeline-container">
         <!-- Date of Establishment -->
         <div class="timeline">
@@ -406,6 +413,8 @@
             </div>
         </div>
     </section>
+
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <h3>CHUYEN BAO LOC BASKETBALL CLUB</h3>
@@ -422,52 +431,17 @@
          </div>
     </footer>
 
+    <!-- Scroll to top on page reload -->
     <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function(){
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-
-        const loader = document.querySelector('.socket')
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
-
         window.onbeforeunload = function(){
             window.scrollTo(0, 0);
         }
-
-        const observer1 = new IntersectionObserver(entries => {
-              // Loop over the entries
-            entries.forEach(entry => {
-                // If the element is visible
-                if (entry.isIntersecting) {
-                // Add the animation
-                    entry.target.classList.add("timeline-item--active");
-                }
-            });
-        });
-
-        // observer1.observe(document.querySelector('.timeline-item'));
-
-        const items = document.querySelectorAll('.timeline-item');
-        items.forEach(item => {
-            observer1.observe(item);
-        });
-
-        lightbox.option({
-            resizeDuration: 200,
-            wrapAround: true,
-            disableScrolling: true,
-        });
     </script>
+    <!-- Navigation bar show on mobile devices -->
+    <script src="/JS/Navbar.js"></script>
+    <!-- Show loader animation while page is loading -->
+    <script src="/JS/Pre-loader.js"></script>
+    <!-- Timeline effects -->
+    <script src="/JS/Timeline.js"></script>
 </body>
 </html>

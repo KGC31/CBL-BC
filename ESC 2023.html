@@ -22,6 +22,7 @@
     <link rel="stylesheet" href="/CSS/Footer.css">
 </head>
 <body>
+    <!-- Page pre-loader -->
     <section class="socket">
         <div class="gel center-gel">
             <div class="hex-brick h1"></div>
@@ -215,6 +216,7 @@
         </div>
     </section>
     
+    <!-- Navigation bar -->
     <header>
         <nav>
             <a href="index.html" id="Logo">
@@ -246,12 +248,14 @@
         <img src="/HTML/img/ESC 2023.png" alt="">
     </section>
 
+    <!-- Description and video recap of ESC 2023 -->
     <section id="recap">
         <h3>ABOUT ESC 2023</h3>
         <p>End Spring Championship 2023 là giải đấu bóng rổ đầu tiên do CLB Bóng rổ THPT Chuyên Bảo Lộc tổ chức dành cho học sinh THPT với sự tham gia của 4 đơn vị. Với sự thành công của ESC 2023, CLB Bóng rổ hướng đến một giải đấu ESC thường niên và tiếp tục là đơn vị CLB thuộc trường học đi đầu trong phong trào bóng rổ ở thành phố Bảo Lộc</p>
         <iframe src="https://www.youtube.com/embed/GNedAKySHF8" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
     </section>
 
+        <!-- Team card: BOD -->
     <section id="team">
         <h3>BOARD OF DIRECTORS</h3>
         <div id="member">
@@ -319,6 +323,7 @@
             </div>
         </div>
 
+        <!-- Team card: Media team -->
         <h3>MEDIA</h3>
         <div id="member">
             <div class="container">
@@ -370,6 +375,7 @@
             </div>
         </div>
 
+        <!-- Team card: External relations and financial department -->
         <h3>EXTERNAL RELATIONS AND FINANCIAL DEPARTMENT</h3>
         <div id="member">
             <div class="container">
@@ -405,6 +411,7 @@
             </div>
         </div>
 
+        <!-- Team card: Logistics department -->
         <h3>LOGISTICS DEPARTMENT</h3>
         <div id="member">
             <div class="container">
@@ -471,6 +478,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <h3>CHUYEN BAO LOC BASKETBALL CLUB</h3>
@@ -487,28 +495,15 @@
          </div>
     </footer>
 
+    <!-- Scroll to top on page reload -->
     <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function(){
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-
-        const loader = document.querySelector('.socket')
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
-
         window.onbeforeunload = function(){
             window.scrollTo(0, 0);
         }
     </script>
+    <!-- Navigation bar show on mobile devices -->
+    <script src="/JS/Navbar.js"></script>
+    <!-- Show loader animation while page is loading -->
+    <script src="/JS/Pre-loader.js"></script>
 </body>
 </html>

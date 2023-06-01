@@ -27,6 +27,7 @@
     <link rel="stylesheet" href="/CSS/Footer.css">
 </head>
 <body>
+    <!-- Page pre-loader -->
     <section class="socket">
         <div class="gel center-gel">
             <div class="hex-brick h1"></div>
@@ -220,6 +221,7 @@
         </div>
     </section>
 
+    <!-- Navigation bar -->
     <header>
         <nav>
             <a href="index.html" id="Logo">
@@ -247,11 +249,13 @@
         </div>
     </header>
 
+    <!-- Hero -->
     <section id="header">
         <p>WE ARE </p>
         <p class="glitch" style="color: #4ac6ff;" data-text="THE GIFTED">THE GIFTED</p>
     </section>
 
+    <!-- Brief introduction -->
     <section id="introduction">
         <div class="inner-container">
             <h1>Who we are</h1>
@@ -261,6 +265,7 @@
         </div>
     </section>
 
+    <!-- Achievements -->
     <section id="number-proof">
         <h3>11</h3>
         <p>Năm kể từ khi thành lập</p>
@@ -270,6 +275,7 @@
         <p>Sự kiện đã tổ chức</p>
     </section>
 
+    <!-- Students reviews -->
     <section id="reviews">
         <div class="testimonial mySwiper">
             <div class="testi-content swiper-wrapper">
@@ -328,6 +334,7 @@
           </div>
     </section>
 
+    <!-- Call to action -->
     <section id="call-to-action">
         <div class="act-child" style="background-image: linear-gradient(to right, #4ac6ff 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 100%), url('/HTML/img/About us.jpg');">
             <div>
@@ -349,6 +356,7 @@
         </div>
     </section>
 
+    <!-- Footer -->
     <footer>
         <div class="footer-content">
             <h3>CHUYEN BAO LOC BASKETBALL CLUB</h3>
@@ -365,44 +373,19 @@
          </div>
     </footer>
 
-    <script src="swiper-bundle.min.js"></script>
-
+    <!-- Scroll to top on page reload -->
     <script>
-        const toggleBtn = document.querySelector('.toggle_btn')
-        const toggleBtnIcon = document.querySelector('.toggle_btn i')
-        const dropDownMenu = document.querySelector('.dropdown_menu')
-
-        toggleBtn.onclick = function(){
-            dropDownMenu.classList.toggle('open')
-            const isOpen = dropDownMenu.classList.contains('open')
-
-            toggleBtnIcon.classList = isOpen
-            ? 'fa-solid fa-xmark'
-            : 'fa-solid fa-bars'
-        }
-
-        const loader = document.querySelector('.socket')
-        window.addEventListener("load", function(){
-            loader.style.display = "none";
-        })
-
         window.onbeforeunload = function(){
             window.scrollTo(0, 0);
         }
-
-        var swiper = new Swiper(".mySwiper", {
-            slidesPerView: 1,
-            grabCursor: true,
-            loop: true,
-            pagination: {
-                el: ".swiper-pagination",
-                clickable: true,
-            },
-            navigation: {
-                nextEl: ".swiper-button-next",
-                prevEl: ".swiper-button-prev",
-            },
-        }); 
     </script>
+
+    <!-- Navigation bar show on mobile devices -->
+    <script src="/JS/Navbar.js"></script>
+    <!-- Show loader animation while page is loading -->
+    <script src="/JS/Pre-loader.js"></script>
+    <!-- Testimonial and swiper script-->
+    <script src="/JS/swiper-bundle.min.js"></script>
+    <script src="/JS/Testimonial.js"></script>
 </body>
 </html>
