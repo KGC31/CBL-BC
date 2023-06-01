@@ -13,13 +13,16 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
-
+    
+    <link rel="stylesheet" href="/CSS/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/CSS/index.css">
     <link rel="stylesheet" href="/CSS/Pre-loader.css">
     <link rel="stylesheet" href="/CSS/Glitch.css">
     <link rel="stylesheet" href="/CSS/Navbar.css">
     <link rel="stylesheet" href="/CSS/Header.css">
+    <link rel="stylesheet" href="/CSS/Introduction.css">
     <link rel="stylesheet" href="/CSS/Number proof.css">
+    <link rel="stylesheet" href="/CSS/Testimonail.css">
     <link rel="stylesheet" href="/CSS/Call to action.css">
     <link rel="stylesheet" href="/CSS/Footer.css">
 </head>
@@ -250,9 +253,12 @@
     </section>
 
     <section id="introduction">
-        <p>
-
-        </p>
+        <div class="inner-container">
+            <h1>Who we are</h1>
+            <p class="text">
+                <span>CLB Bóng rổ THPT Chuyên Bảo Lộc</span> được thành lập là một trong những câu lạc bộ thể thao của trường THPT Chuyên Bảo Lộc. Trong suốt những năm hoạt động, CLB luôn là một trong những đơn vị đi đầu trong phong trào bóng rổ học đường ở thành phố Bảo Lộc. <span>CLB Bóng rổ THPT Chuyên Bảo Lộc</span> đã đạt được nhiều thành tích trong các giải đấu trong khu vực và đang hướng đến việc tạo nên một cộng đồng bóng rổ phát triển hơn nữa
+            </p>
+        </div>
     </section>
 
     <section id="number-proof">
@@ -262,6 +268,64 @@
         <p>Giải thưởng đã giành được</p>
         <h3>2</h3>
         <p>Sự kiện đã tổ chức</p>
+    </section>
+
+    <section id="reviews">
+        <div class="testimonial mySwiper">
+            <div class="testi-content swiper-wrapper">
+              <div class="slide swiper-slide">
+                <img src="/HTML/img/Kim.png" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+                </p>
+    
+                <i class="fa-solid fa-quote-left fa-flip-horizontal quote-icon"></i>
+    
+                <div class="details">
+                  <span class="name">Marnie Lotter</span>
+                  <span class="job">Web Developer</span>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <img src="/HTML/img/TQBao.jpg" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+                </p>
+    
+                <i class="fa-solid fa-quote-left fa-flip-horizontal quote-icon"></i>
+    
+                <div class="details">
+                  <span class="name">Marnie Lotter</span>
+                  <span class="job">Web Developer</span>
+                </div>
+              </div>
+              <div class="slide swiper-slide">
+                <img src="/HTML/img/PNNhat.jpg" alt="" class="image" />
+                <p>
+                  Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aperiam,
+                  saepe provident dolorem a quaerat quo error facere nihil deleniti
+                  eligendi ipsum adipisci, fugit, architecto amet asperiores
+                  doloremque deserunt eum nemo.
+                </p>
+    
+                <i class="fa-solid fa-quote-left fa-flip-horizontal quote-icon"></i>
+    
+                <div class="details">
+                  <span class="name">Marnie Lotter</span>
+                  <span class="job">Web Developer</span>
+                </div>
+              </div>
+            </div>
+            <div class="swiper-button-next nav-btn"></div>
+            <div class="swiper-button-prev nav-btn"></div>
+            <div class="swiper-pagination"></div>
+          </div>
     </section>
 
     <section id="call-to-action">
@@ -301,6 +365,8 @@
          </div>
     </footer>
 
+    <script src="swiper-bundle.min.js"></script>
+
     <script>
         const toggleBtn = document.querySelector('.toggle_btn')
         const toggleBtnIcon = document.querySelector('.toggle_btn i')
@@ -323,6 +389,20 @@
         window.onbeforeunload = function(){
             window.scrollTo(0, 0);
         }
+
+        var swiper = new Swiper(".mySwiper", {
+            slidesPerView: 1,
+            grabCursor: true,
+            loop: true,
+            pagination: {
+                el: ".swiper-pagination",
+                clickable: true,
+            },
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        }); 
     </script>
 </body>
 </html>
