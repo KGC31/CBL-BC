@@ -3,38 +3,32 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  background-color: #000;
   width: 100%;
-  margin: 30px 0 30px;
-  --frame-width: 70vw;
+  margin: 0  0 30px 0;
+  padding: 60px 0 30px;
+  --frame-width: 80vw;
 }
 
-
-#small-screen{
-   display: flex;
-   flex-direction: row;
-   width: var(--frame-width);
-   height: 2rem;
-   align-items: center;
-
-   background-color: #000;
-
-   border: #4ac6ff 2px solid;
-   border-bottom: 0px;
-   border-top-left-radius: 1rem;
-   border-top-right-radius: 1rem;
+#recap h3{
+   font-family: 'Maverick Regular';
+   font-size: 3rem;
+   padding: 0;
+   margin: 0;
+   color: #4ac6ff;
 }
 
-#small-screen > img{
-   margin-left: 1rem;
-   height: 10px;
+#recap p{
+   text-align: justify;
+   font-family: 'Montserrat', sans-serif;
+   color: #fff;
+   width: var(--frame-width); 
+   padding: 30px 0;
 }
 
 #recap iframe{
    width: var(--frame-width); 
    height: calc(var(--frame-width) * 315/560);
-   border: #4ac6ff 2px solid;
-   border-bottom-left-radius: 1rem;
-   border-bottom-right-radius: 1rem;
 }
 
 @media screen and (max-width: 576px) {
