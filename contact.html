@@ -280,7 +280,7 @@
                 <span class="circle one"></span>
                 <span class="circle two"></span>
       
-                <form onsubmit="sendEmail(); reset(); return false;" autocomplete="off" method="post">
+                <form autocomplete="off">
                   <h3 class="title">Contact us</h3>
                   <div class="input-container">
                     <input type="text" name="name" class="input" />
@@ -302,7 +302,7 @@
                     <label for="">Message</label>
                     <span>Message</span>
                   </div>
-                  <input type="submit" name="submit" value="Send" class="btn" />
+                  <input type="submit" onclick="noticeUser()" name="submit" value="Send" class="btn" />
                 </form>
               </div>
             </div>
@@ -366,6 +366,10 @@
 
         window.onbeforeunload = function(){
             window.scrollTo(0, 0);
+        }
+
+        function noticeUser() {
+            alert("Sorry! Our contact form is not working right now.");
         }
     </script>
 </body>
