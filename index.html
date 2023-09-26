@@ -13,6 +13,7 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.1/font/bootstrap-icons.css">
     
     <link rel="stylesheet" href="/CSS/swiper-bundle.min.css" />
     <link rel="stylesheet" href="/CSS/index.css">
@@ -23,6 +24,7 @@
     <link rel="stylesheet" href="/CSS/Introduction.css">
     <link rel="stylesheet" href="/CSS/Number proof.css">
     <link rel="stylesheet" href="/CSS/Testimonail.css">
+    <link rel="stylesheet" href="/CSS/FAQ.css">
     <link rel="stylesheet" href="/CSS/Call to action.css">
     <link rel="stylesheet" href="/CSS/Footer.css">
 </head>
@@ -287,7 +289,7 @@
     
                 <div class="details">
                   <span class="name">Lữ Khánh Linh</span>
-                  <span class="job">SK6 - Cựu ban chủ nhiệm CLB</span>
+                  <span class="job">SK6 - Cựu chủ nhiệm CLB</span>
                 </div>
               </div>
               <div class="slide swiper-slide">
@@ -300,7 +302,7 @@
     
                 <div class="details">
                   <span class="name">Nguyễn Việt Kim</span>
-                  <span class="job">AK7 - Cựu ban chủ nhiệm CLB</span>
+                  <span class="job">AK7 - Cựu chủ nhiệm CLB</span>
                 </div>
               </div>
               <div class="slide swiper-slide">
@@ -313,7 +315,7 @@
     
                 <div class="details">
                   <span class="name">Trần Thị Như Quỳnh</span>
-                  <span class="job">HK10 - Ban chủ nhiệm CLB</span>
+                  <span class="job">HK10 - Chủ nhiệm CLB</span>
                 </div>
               </div>
             </div>
@@ -323,7 +325,95 @@
           </div>
     </section>
 
-    <!-- Call to action -->
+    <!-- Frequently asked questions -->
+    <section class="faq_container">
+        <div class="faq">
+            <header class="faq__header">
+                <h2 class="faq__title">Frequently asked questions</h2>
+                <p class="faq__subtitle">
+                    Những câu hỏi thường được thắc mắc sẽ được CLB giải đáp cho các bạn
+                </p>
+            </header>
+            <hr class="faq__separator" />
+            <div class="faq__item">
+                <button
+                    class="faq__question"
+                    aria-expanded="false"
+                    aria-controls="answer1"
+                >
+                    Nếu không biết chơi bóng rổ thì có thể tham gia CLB không?
+                    <i class="faq__icon bi bi-chevron-down"></i>
+                </button>
+                <div class="faq__answer" id="answer1" aria-hidden="true">
+                    <div class="faq__answer-inner">
+                        <p class="faq__answer-text">
+                            Câu trả lời là được nhé. CLB luôn chào đón những thành viên mới và điều kiện duy nhất để tham gia đó là có hứng thú hoặc niềm đam mê với trái bóng cam. Các bạn cũng đừng quá lo vì CLB sẽ tổ chức những buổi tập luyện để mình có thể cùng nhau trau đồi kĩ năng bóng rổ nè.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__item">
+                <button
+                    class="faq__question"
+                    aria-expanded="false"
+                    aria-controls="answer2"
+                >
+                    Làm thế nào để tham gia CLB?
+                    <i class="faq__icon bi bi-chevron-down"></i>
+                </button>
+                <div class="faq__answer" id="answer2" aria-hidden="true">
+                    <div class="faq__answer-inner">
+                        <p class="faq__answer-text">
+                            CLB sẽ tổ chức các đợt tuyển thành viên, vì vậy nên các bạn theo dõi những thông báo mới nhất của CLB trên trường hoặc trên fanpage của CLB nhé.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__item">
+                <button
+                    class="faq__question"
+                    aria-expanded="false"
+                    aria-controls="answer3"
+                >
+                    Khi tham gia tập luyện thì có cần lệ phí gì không?
+                    <i class="faq__icon bi bi-chevron-down"></i>
+                </button>
+                <div class="faq__answer" id="answer3" aria-hidden="true">
+                    <div class="faq__answer-inner">
+                        <p class="faq__answer-text">
+                            Khi tập luyện các bạn chỉ cần chuẩn bị áo quần sao cho thoải mái khi vận dộng, một đôi giày thể thao, một chai nước để có thể uống khi giải lao và một quả bóng rổ nếu có. Ngoài ra, các chi phí về sân bãi sẽ được CLB thông báo sau tùy vào nơi tập của CLB nhé.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <div class="faq__item">
+                <button
+                    class="faq__question"
+                    aria-expanded="false"
+                    aria-controls="answer4"
+                >
+                    Ban hậu cần thì cần làm những gì?
+                    <i class="faq__icon bi bi-chevron-down"></i>
+                </button>
+                <div class="faq__answer" id="answer4" aria-hidden="true">
+                    <div class="faq__answer-inner">
+                        <p class="faq__answer-text">
+                            Ban hậu cần CLB Bóng rổ có vai trò rất quan trọng để đảm bảo các hoạt động diễn ra suôn sẻ và đảm bảo mọi thứ được chuẩn bị tổ chức một cách hợp lý từ thiết bị cho đến cơ sở vật chất, có thể kể đến như:
+                            <br>
+                            1. Quản lý thiết bị và trang thiết bị.
+                            <br>
+                            2. Chuẩn bị và quản lý các hoạt động tổ chức giải.
+                            <br>
+                            3. Quản lý nguồn lực tài chính.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <script src="./JS/FAQ.js"></script>
+
+    <!-- Call to action
     <section id="call-to-action">
         <div class="act-child" style="background-image: linear-gradient(to right, #4ac6ff 0%, rgba(0, 0, 0, 0.7) 50%, rgba(0, 0, 0, 0.5) 100%), url('/HTML/img/About us.jpg');">
             <div>
@@ -342,8 +432,8 @@
                 <h3>CONTACT US</h3>
                 <a href="contact.html">Click here</a>
             </div>
-        </div> -->
-    </section>
+        </div>
+    </section> -->
 
     <!-- Footer -->
     <footer>
