@@ -126,3 +126,19 @@ nav .toggle_btn{
         display: none;
     }
 }
+
+.join-us{
+    background-color: #4ac6ff;
+    border: #4ac6ff 2px solid; 
+    color: #000;
+    font-weight: 700;
+    padding: 0.3rem; 
+    padding-left: 0.7rem;
+    padding-right: 0.7rem;
+    border-radius: 2rem;
+}
+
+.join-us:hover{
+    background-color: transparent;
+    color: #fff;
+}

@@ -1,0 +1,167 @@
+#header{
+    position: relative;
+    height: 100vh;
+    background-color: #000;
+    background-image: url("/HTML/img/recruitment.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+
+#header p{
+    color: #fff;
+    font-family: 'Maverick Italic';
+    font-size: 50px;
+    user-select: none;
+}
+
+@media screen and (max-width: 576px) {
+  #header{
+      height: 100vh;
+  }
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Dela+Gothic+One&display=swap');
+
+/* Timeline */
+#timeline{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 30vh;
+    background-color: #000;
+}
+.timeline {
+	width:70vw;
+	height: 20px;
+    margin-bottom: 2rem;
+	list-style: none;
+	text-align: justify;
+	margin: 80px auto;
+	background: -webkit-gradient(left top, left bottom, color-stop(0%, rgba(255,255,255,0)), color-stop(45%, rgba(255,255,255,0)), color-stop(51%, rgba(74,198,255,1)), color-stop(57%, rgba(255,255,255,0)), color-stop(100%, rgba(255,255,255,0)));
+	background: linear-gradient(to bottom, rgba(255,255,255,0) 0%, rgba(255,255,255,0) 45%, rgba(74,198,255,1) 51%, rgba(255,255,255,0) 57%, rgba(255,255,255,0) 100%);
+}
+
+.timeline:after {
+    display: inline-block;
+    content: "";
+    width: 100%;
+}
+
+.timeline li {
+	display: inline-block;
+	width: 20px;
+	height: 20px;
+    color: #fff;
+	background: #fff;
+	text-align: center;
+	line-height: 1.2;
+	position: relative;
+	border-radius: 50%;
+}
+.timeline li:before {
+	display: inline-block;
+	content: attr(data-year);
+	font-size: 1rem;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+
+.timeline li:after {
+	display: inline-block;
+	content: attr(data-text);
+	font-size: 16px;
+	position: absolute;
+	left: 50%;
+	transform: translateX(-50%);
+}
+.timeline li:before {
+	top: -40px;
+}
+.timeline li:after {
+	bottom: 0;
+	margin-bottom: -10px;
+	transform: translate(-50%, 100%);
+}
+
+#description{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    color: #fff;
+}
+.role{
+    width: 80vw;
+    padding: 2rem;
+}
+.role h1{
+    color: #4ac6ff;
+    font-family: 'Maverick Italic';
+    font-size: 3rem;
+    margin: 0;
+}
+
+.role h4{
+    margin: 0;
+    font-style: italic;
+}
+
+.role-description{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    gap: 1rem;
+}
+
+.role-description h3{
+    border-bottom: #fff solid 1px;
+}
+
+/* call to action */
+.action{
+    height: 30vh;
+    background-color:rgba(0, 0, 0, 0.5);
+    /* The image used */
+  background-image: url('/HTML/img/recruitment.jpg');
+
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.action h1{
+    color: #fff;
+    -webkit-text-stroke: #000 0.5px;
+    font-size: 3rem;
+    font-family: 'Dela Gothic One', cursive;
+    margin: 0;
+    text-align: center;
+}
+
+.action a{
+    padding: 1rem;
+    color: #000;
+    border: #000 2px solid;
+    background-color: #4ac6ff;
+    border-radius: 2rem;
+    font-weight: 700;
+}
+
+.action a:hover{
+    color: #fff;
+    border-color: #fff;
+}
+
+@media screen and (max-width: 768px){
+    .action h1{
+        font-size: 2rem;
+    }
+}
